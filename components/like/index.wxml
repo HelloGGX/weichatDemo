@@ -1,0 +1,6 @@
+<!-- components/like/like.wxml -->
+<view class="container" hover-class="none" bind:tap="onLike">
+	<image class="" src="{{likeStatus}}" mode="aspectFit|aspectFill|widthFix" />
+	<text class="" >{{normizeCount}}</text>
+</view>
+

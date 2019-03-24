@@ -1,0 +1,39 @@
+/* components/book/index.wxss */
+.container {
+  width: 240rpx;
+  height: 360rpx;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  box-shadow: 0px 0px 12px #bababa;
+}
+.b-cover {
+  height: 220rpx;
+  width: 100%;
+}
+.b-info {
+  padding: 20rpx;
+}
+.b-title {
+  margin-bottom: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24rpx;
+  line-height: 22rpx;
+}
+.b-author {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 20rpx;
+  color: #999999;
+  line-height: 20rpx;
+}
+.foot {
+  text-align: right;
+}
+.footer {
+  font-size: 20rpx;
+  color: #bbbbbb;
+}

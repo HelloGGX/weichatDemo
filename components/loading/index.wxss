@@ -1,0 +1,91 @@
+/* components/loading/index.wxss */
+.container {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    /* background-color: rgba(0,0,0,.5); */
+    text-align: center;
+    font-size: 0;
+    white-space: nowrap;
+    overflow: auto;
+}
+.container:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.loading {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 14rpx;
+    white-space: normal;
+}
+.loadEffect{
+            width: 100rpx;
+            height: 100rpx;
+            position: relative;
+        }
+        .loadEffect span{
+            display: inline-block;
+            width: 20rpx;
+            height: 20rpx;
+            border-radius: 50%;
+            background: #303030;
+            position: absolute;
+            -webkit-animation: load 1.04s ease infinite;
+        }
+        @-webkit-keyframes load{
+            0%{
+                -webkit-transform: scale(1.2);
+                opacity: 1;
+            }
+            100%{
+                -webkit-transform: scale(.3);
+                opacity: 0.5;
+            }
+        }
+        .loadEffect span:nth-child(1){
+            left: 0;
+            top: 50%;
+            margin-top:-10rpx;
+            -webkit-animation-delay:0.13s;
+        }
+        .loadEffect span:nth-child(2){
+            left: 14rpx;
+            top: 14rpx;
+            -webkit-animation-delay:0.26s;
+        }
+        .loadEffect span:nth-child(3){
+            left: 50%;
+            top: 0;
+            margin-left: -10rpx;
+            -webkit-animation-delay:0.39s;
+        }
+        .loadEffect span:nth-child(4){
+            top: 14rpx;
+            right:14rpx;
+            -webkit-animation-delay:0.52s;
+        }
+        .loadEffect span:nth-child(5){
+            right: 0;
+            top: 50%;
+            margin-top:-10rpx;
+            -webkit-animation-delay:0.65s;
+        }
+        .loadEffect span:nth-child(6){
+            right: 14rpx;
+            bottom:14rpx;
+            -webkit-animation-delay:0.78s;
+        }
+        .loadEffect span:nth-child(7){
+            bottom: 0;
+            left: 50%;
+            margin-left: -10rpx;
+            -webkit-animation-delay:0.91s;
+        }
+        .loadEffect span:nth-child(8){
+            bottom: 14rpx;
+            left: 14rpx;
+            -webkit-animation-delay:1.04s;
+        }

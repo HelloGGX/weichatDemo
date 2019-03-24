@@ -1,0 +1,31 @@
+/* components/search-input/index.wxss */
+.search-container {
+  width: 538rpx;
+  height: 70rpx;
+  padding: 0 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  border-radius: 50rpx;
+}
+.icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+.bar {
+  width: 100%;
+  margin: 0 10rpx;
+  font-size: 28rpx;
+}
+.p-bar {
+  font-size: 28rpx;
+  color: #999999;
+}
+.cancel-img {
+  width: 30rpx;
+  height: 30rpx;
+  overflow: hidden;
+  border-radius: 100%;
+}

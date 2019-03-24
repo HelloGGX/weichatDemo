@@ -1,0 +1,8 @@
+<!-- components/tag/index.wxml -->
+
+<view class="container  tag-class" bind:tap="onTap" hover-class="tap">
+	<slot name="before" />
+	<text class="key">{{key}}</text>
+	<slot name="after" />
+</view>
+

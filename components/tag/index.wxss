@@ -1,0 +1,20 @@
+/* components/tag/index.wxss */
+.container {
+  margin: 10rpx;
+  padding: 0 24rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 52rpx;
+  border-radius: 8rpx;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+.key {
+  font-size: 28rpx;
+  margin-right: 14rpx;
+}
+.tap {
+  background-color: #e6e6e6;
+}

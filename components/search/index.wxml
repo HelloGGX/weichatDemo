@@ -1,0 +1,49 @@
+<!-- components/search/index.wxml -->
+<view class="container">
+
+	<view class="header">
+		<v-search-input
+		 bind:onQuery="onQuery"
+		 bind:confirm="onConfirm"
+		 query="{{query}}"
+		 bind:clear="onClear"
+		/>
+		<view class="cancel" bind:tap="onCancel">取消</view>
+	</view>
+	<view class="history-container" wx:if="{{!searching}}">
+		<view class="history">
+			<view class="title">
+				<view class="chunk" />
+				<text>历史搜索</text>
+			</view>
+			<view class="tags">
+				<block wx:for="{{history}}" wx:key="*this">
+					<v-tag bind:tapping="onConfirm" key="{{item}}" />
+				</block>
+			</view>
+		</view>
+		<view class="history hot-search">
+			<view class="title">
+				<view class="chunk" />
+				<text>热门搜索</text>
+			</view>
+			<view class="tags">
+				<block wx:for="{{hotKeys}}" wx:key="*this">
+					<v-tag bind:tapping="onConfirm" key="{{item}}" />
+				</block>
+			</view>
+		</view>
+	</view>
+	<view wx:if="{{searching}}" class="result-container">
+		<block wx:for="{{result}}" wx:key="id">
+			<v-book class="result-item" book="{{item}}" />
+		</block>
+		<view class="wran" hidden="{{result.length>0}}">没有搜索到书籍</view>
+	</view>
+	<v-loading hidden="{{!loading}}" />
+	<view class="noMore" hidden="{{!noMore}}">
+		已经到底，没有更多数据了
+	</view>
+
+</view>
+

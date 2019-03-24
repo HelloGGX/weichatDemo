@@ -1,0 +1,16 @@
+<!--components/loading/index.wxml-->
+<view class="container" hidden="{{hidden}}">
+	<view class="loading">
+		<view class="loadEffect">
+			<span/>
+			<span/>
+			<span/>
+			<span/>
+			<span/>
+			<span/>
+			<span/>
+			<span/>
+		</view>
+	</view>
+</view>
+

@@ -1,0 +1,55 @@
+/* pages/book/book.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.b-search-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+}
+.b-search {
+  width: 690rpx;
+  height: 68rpx;
+  margin: 20rpx auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80rpx;
+  background-color: #f7f7f7;
+}
+.b-icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0 10rpx;
+}
+.b-text {
+  font-size: 28rpx;
+  display: inline-block;
+  color: #999999;
+}
+.b-content {
+  margin-top: 108rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+.b-title {
+  width: 130rpx;
+  height: 40rpx;
+  margin: 34rpx 0;
+}
+.b-lists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 34rpx;
+}
+.b-item {
+  margin-bottom: 60rpx;
+}

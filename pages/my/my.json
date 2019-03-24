@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-button":"/components/button/index",
+    "v-card":"/components/card/index"
+  }
+}

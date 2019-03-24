@@ -1,0 +1,6 @@
+<!-- components/share/share.wxml -->
+<view class="share">
+	<button class="share-btn" open-type="share" />
+	<image class="share-img" src="image/share@2x.png" mode="aspectFit|aspectFill|widthFix" />
+</view>
+

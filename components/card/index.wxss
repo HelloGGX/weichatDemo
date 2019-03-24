@@ -1,0 +1,40 @@
+/* components/card/index.wxss */
+.container {
+    width: 330rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.info-container {
+    width: 100%;
+    padding: 10rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cover-container {
+height: 240rpx;
+overflow: hidden;
+}
+.img {
+    height:240rpx;
+}
+
+.cover {
+    width: 240rpx;
+    height: 240rpx;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.info {
+    padding: 40rpx 20rpx;
+    display: -webkit-box;    
+    -webkit-box-orient: vertical;    
+    -webkit-line-clamp: 2;    
+    overflow: hidden;
+    font-size: 28rpx;
+    color: #999999;
+}

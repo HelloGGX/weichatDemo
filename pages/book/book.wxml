@@ -1,0 +1,24 @@
+<!-- pages/book/book.wxml -->
+<view hidden="{{searching}}" class="container">
+	<view class="b-search-container" bind:tap="onSearch">
+		<view class="b-search">
+			<image class="b-icon" src="../../images/icon/search.png" mode="aspectFit" />
+			<text class="b-text">搜索图书名称</text>
+		</view>
+	</view>
+	<view class="b-content">
+		<image class="b-title" src="../../images/book/quality.png" mode="aspectFit" />
+		<view class="b-lists">
+			<block wx:for="{{books}}" wx:key="id">
+				<v-book class="b-item" book="{{item}}" />
+			</block>
+		</view>
+	</view>
+</view>
+<v-search
+ more="{{more}}"
+ wx:if="{{searching}}"
+ bind:cancel="onCancel"
+ bind:query="query"
+/>
+

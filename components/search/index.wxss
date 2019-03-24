@@ -1,0 +1,81 @@
+/* components/search/index.wxss */
+.container {
+  padding: 0 30rpx;
+}
+.header-container {
+  width:100%;
+  position:fixed;
+  top:0;
+  background-color:#ffffff;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+
+.cancel {
+  width: 122rpx;
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 28rpx;
+}
+.history-container {
+  margin-top: 100rpx;
+}
+.history {
+  margin: 68rpx 0;
+}
+.title {
+  font-size: 28rpx;
+  line-height: 28rpx;
+  margin-bottom: 30rpx;
+}
+.chunk {
+  width: 8rpx;
+  height: 28rpx;
+  display: inline-block;
+  vertical-align: bottom;
+  background-color: black;
+  margin-right: 20rpx;
+}
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.hot-search {
+}
+.result-container {
+  margin-top:68rpx;
+  padding: 34rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.result-item {
+  margin-bottom: 60rpx;
+}
+.wran {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 230rpx;
+  height: 50rpx;
+}
+.noMore {
+  text-align:center;
+line-height:60rpx;
+height:60rpx;
+font-size:28rpx;
+margin-bottom:20rpx;
+
+}

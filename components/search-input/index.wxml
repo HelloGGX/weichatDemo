@@ -1,0 +1,6 @@
+<!-- components/search-input/index.wxml -->
+<view class="search-container">
+    <image class="icon" src="images/search.png" mode="aspectFit|aspectFill|widthFix" />
+    <input class="bar" value="{{query}}" bindconfirm="onConfirm" bindinput="onQuery" type="text" placeholder="搜索图书名" placeholder-class="p-bar" maxlength="140" auto-focus="true" />
+    <image hidden="{{!searching}}" bind:tap="clear" class="cancel-img" src="images/cancel.png" mode="aspectFit|aspectFill|widthFix" />
+</view>

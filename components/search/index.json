@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-search-input": "../search-input/index",
+    "v-tag": "../tag/index",
+    "v-book": "../book/index",
+    "v-loading":"../loading/index"
+  }
+}

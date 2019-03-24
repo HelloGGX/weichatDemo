@@ -1,0 +1,13 @@
+<!--components/card/index.wxml-->
+<view class="container" bind:tap="toDetail">
+	<view class="info-container">
+		<v-tag key="{{type}}" />
+		<v-like like="{{data.like_status}}" read-only="{{true}}" count="{{data.fav_nums}}" />
+	</view>
+	<view class="cover-container">
+		<image class="{{cover}}" src="{{data.image}}" mode="aspectFit" />
+	</view>
+	<text class="info">{{data.content}}</text>
+
+</view>
+

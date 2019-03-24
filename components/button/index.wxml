@@ -1,0 +1,11 @@
+<!--components/button/index.wxml-->
+<button
+ class="container"
+ open-type='{{openType}}'
+ lang="zh_CN"
+ plain='{{true}}'
+ bindgetuserinfo="onGetUserInfo"
+>
+	<slot name="img" />
+</button>
+

@@ -1,0 +1,56 @@
+/* components/classic/music/index.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.music-cover {
+  width: 450rpx;
+  height: 450rpx;
+  border-radius: 50%;
+  margin-top: 42rpx;
+  position: relative;
+  box-shadow: 0px 0px 16px #c2c2c2;
+}
+.icon-play {
+  width: 120rpx;
+  height: 120rpx;
+  position: relative;
+  bottom: 280rpx;
+}
+.tag {
+  width: 44rpx;
+  height: 128rpx;
+  position: absolute;
+  bottom: 90rpx;
+  left: -40px;
+}
+.content {
+  font-size: 36rpx;
+  max-width: 550rpx;
+}
+.rotation {
+  transform: rotate(360deg);
+  animation: rotate 15s linear infinite;
+  -webkit-animation: rotate 15s linear infinite; /* Safari 和 Chrome */
+  -ms-animation: rotate 15s linear infinite; /* Safari 和 Chrome */
+  -o-animation: rotate 15s linear infinite; /* Safari 和 Chrome */
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
